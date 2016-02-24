@@ -15,7 +15,7 @@ if ($conn->connect_error) {
 } 
 
 // Creating a database
-/*$sql = "CREATE DATABASE password_man";
+$sql = "CREATE DATABASE password_man";
 if ($conn->query($sql) === TRUE) {
     echo "Database created successfully";
 } else {
