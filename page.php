@@ -98,5 +98,17 @@ $conn->close();
 
 ?>
 
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> 
+   
+   <br><br>
+  In case there is no database,  this will generate it: <input type="submit" name="database" value="database"> 
+    <?php
+       if(isset($_POST['database'])){  
+       header("Location:server.php");
+       } 
+ 
+    ?>
+</form>
+
 </body>
 </html>
